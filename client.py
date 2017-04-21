@@ -6,6 +6,6 @@ s = socket.socket()         # Create a socket object
 host = socket.gethostname() # Get local machine name
 port = 12345                # Reserve a port for your service.
 
-s.connect((host, port))
+s.connect(("192.168.0.103", port))
 print (s.recv(1024))
 s.close                     # Close the socket when done
