@@ -3,7 +3,8 @@ import socket
 s = socket.socket()
 host = socket.gethostname()
 port = 12345
-s.bind((host,port))
+#s.bind((host,port))
+s.bind(("103.72.177.22",port))
 
 s.listen(5)
 while True:
